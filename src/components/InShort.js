@@ -32,7 +32,7 @@ class InShort extends Component {
     this.panResponder = PanResponder.create({
       onStartShouldSetPanResponder: () => true,
       onPanResponderMove: (e, gestureState) => {
-        console.log('gestureState', gestureState.dy);
+        // console.log('gestureState', gestureState.dy);
         if (gestureState.dy > 0 && this.state.currentIndex > 0) {
           this.swipedCardPosition.setValue({
             x: 0,
